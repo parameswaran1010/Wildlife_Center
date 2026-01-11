@@ -2,8 +2,11 @@
 
 import { NavLinks } from "./nav-links"
 import { ThemeToggle } from "../theme-toggle"
+import { LogOut } from "lucide-react"
+import { useAuth } from "@/context/auth-context"
 
 export function MainNav() {
+    const { user, signOut } = useAuth()
     return (
         <>
             {/* Mobile/Portrait Bottom Navigation */}
@@ -29,6 +32,15 @@ export function MainNav() {
                         <span className="text-sm text-muted-foreground">Theme</span>
                         <ThemeToggle />
                     </div>
+                    {user && (
+                        <button
+                            onClick={signOut}
+                            className="flex items-center justify-between w-full mt-4 text-sm text-muted-foreground hover:text-destructive transition-colors"
+                        >
+                            <span>Sign Out</span>
+                            <LogOut className="w-4 h-4" />
+                        </button>
+                    )}
                 </div>
             </aside>
 
@@ -40,7 +52,18 @@ export function MainNav() {
                     </div>
                     <span className="font-bold text-forest-green">Wildlife Centre</span>
                 </div>
-                <ThemeToggle />
+                <div className="flex items-center gap-2">
+                    {user && (
+                        <button
+                            onClick={signOut}
+                            className="p-2 hover:bg-accent rounded-full text-muted-foreground hover:text-destructive transition-colors"
+                            aria-label="Sign Out"
+                        >
+                            <LogOut className="w-5 h-5" />
+                        </button>
+                    )}
+                    <ThemeToggle />
+                </div>
             </header>
         </>
     )
