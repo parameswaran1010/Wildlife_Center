@@ -1,0 +1,13 @@
+{
+  "/(main)/animals/[id]/page": "/animals/[id]",
+  "/(main)/animals/page": "/animals",
+  "/(main)/events/[id]/page": "/events/[id]",
+  "/(main)/events/page": "/events",
+  "/(main)/login/page": "/login",
+  "/(main)/page": "/",
+  "/(main)/subscriber/page": "/subscriber",
+  "/(main)/tips/page": "/tips",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico"
+}

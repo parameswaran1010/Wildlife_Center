@@ -1,0 +1,7 @@
+{
+  "/(main)/animals/page": "app/(main)/animals/page.js",
+  "/(main)/events/page": "app/(main)/events/page.js",
+  "/(main)/login/page": "app/(main)/login/page.js",
+  "/(main)/page": "app/(main)/page.js",
+  "/(main)/subscriber/page": "app/(main)/subscriber/page.js"
+}

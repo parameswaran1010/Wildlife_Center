@@ -1,0 +1,9 @@
+[00:00:04.615] Server  LOG     ✓ Ready in 3.7s
+[00:01:29.144] Server  LOG     ○ Compiling /subscriber ...
+[00:01:44.813] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:10.313] Server  WARN    ⚠ Cross origin request detected from 192.168.0.94 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:07:10.369] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:05.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:06.109] Browser WARN    Image with src "/assets/images/Red_Fox.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
